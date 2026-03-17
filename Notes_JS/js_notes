@@ -1,0 +1,105 @@
+how to run the program in visual studio
+1. from terminal - manually step
+2. from extension - code runner
+
+1. Manual step
+option > Terminal > new terminal > change directory (get the day_01)
+cd directoryName (cd Day_01) then hit enter
+
+node filename (fullyqualified name of file)
+
+
+
+Datatypes
+Varilables
+
+name  - container
+= Nitin - data
+
+In Javascript datatypes are divided into 2 category
+1. Primitive
+2. Non-primitive
+
+In Javascript
+Primitive total 7 dataTypes
+1. Number
+2. String
+3. Boolean
+4. Undefined
+5. BigInt (Not use)
+6. Symbol (Not use)
+7. null
+
+Non-Primitive
+1. Object
+2. Array
+3. Functions
+
+variables - 
+let, const, var
+
+keyword variableName= value;
+
+Scope - variable declared anywhere
+        1. outside the function/blocks - Global variable
+        2. variable declared inside the function. scope of that variable would remained within that function only. || local variable
+        3. variable declared inside the block  scope would remained withing that block(if,elseif, switch, while,for) -- let, const, var
+
+        if(true){
+            var name = "nitin"
+        }
+
+        console.log(name) // error(incase of let and const)
+
+        var name= "Nitin"; // variable decalration and initialization 
+        var name = "sachin" ; // re-declaration.
+        name = "Abhishek"; // re-assigned
+
+        re-declaration and re-allocation allowed of value type var... in javascript....
+
+        let - function, block, global
+         let flag = true;  // variable decalration and initialization 
+         let flag = false; //this is not allowed in let keyword | re-declaration is not allowed in ley keyword
+         flag=false; // re-allocation is allowed in let.
+
+         const - function, block, global
+            1. re-declaration and re-allocation is not allowed in const keyword
+            2. act as same as final keyword in java.
+
+            const domain= 'automation' this will remained fix as automation since declaraed as const keyword
+            const domiain = "business analyst" | not allowed.. user will get run time error
+            domain = " Manual testing" | not allowed.
+
+
+    JS functions - two types of function
+    1.  function declarations - 
+
+                function functionName(){
+                 // write body   
+                }
+
+
+    2.  function expression.
+            1. arrow function 
+
+                        ()=>{
+                          //write body here  
+                        }
+
+
+            2. anonymous function (function without function Name)
+                        function(){
+                            //write body here
+                        }     
+
+
+ReferenceError: UName is not defined
+    at Object.<anonymous> (/Volumes/Renuka/Professional Stuff (Restricted)/Session_material/Session_WorkSpaces/SA2511004_Workspace/Javascript_WS/Day_02/variableInJs.js:37:23)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+
