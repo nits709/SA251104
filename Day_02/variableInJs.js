@@ -73,7 +73,3 @@ let browserName = "chrome"; // declaration and initialization of variable in sin
 //let browserName ; // re-declaration of variable and re-initialization of variable. we cannot re-declare variable declared with let keyword but we can re-assign value to variable declared with let keyword.
 browserName = "firefox"; // initialization of variable. we can reassign value to variable in javascript. we can also reassign value to variable declared with var and let keyword but we cannot reassign value to variable declared with const keyword.
 console.log("browserName "+ browserName); // output will be chrome
-
-
-
-// const this is assignment for you .....
