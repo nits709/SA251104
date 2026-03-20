@@ -1,0 +1,42 @@
+Assignments
+
+1. Create a new JavaScript file named assignment1.js.
+	Declare the following variables using let or const:
+	1. Your name
+	2. Your age
+	3. Whether you are a student (true/false)
+	4.Your height in meters
+	5.A list (array) of your 3 favorite foods
+
+	Create each variables using var,let,const
+
+2. Create a sentence using your variables and print it.	
+3.Create an object containing your information.
+4. print sum of 100 natural number
+5. Write a js code to validate number is positive 	or   	negative
+
+6. Write a js code to validate number is even or odd
+7. write a js code to validate any prime number
+8. write a js code to evaluate day
+   1=monady
+   7=sunday
+9.write a js code for grade mechanism
+	marks are greater than or equal to 70=A
+	marks are greater than or equal to 60=B
+	marks are greater than or equal to 40=c
+	otherwise fail
+
+10.  try pop() and shift() - 
+11. try function slice() and indexof() - 
+12. Imagin a person teaching 
+13. /// write code achieve runtime polymorphism in JS
+14. Write a function to add two numbers.
+15.Write a function that checks if a number is even or odd.
+16.Write a function that returns the factorial of a number.
+17.Write a function that reverses a string.
+18.Write a function to find the largest number in an array.
+19. Write a function to sum all elements in an array.
+20. Write a function to remove duplicates from an array.
+21.Write a function to sort an array in ascending and descending order.
+22.Write a function to find the second largest number in an array.
+23.Write a function to count the number of occurrences of each element in an array.

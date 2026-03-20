@@ -105,3 +105,140 @@ ReferenceError: UName is not defined
 
 Operators
 
+
+Control Flow
+1. Conditionals
+    if() - simple if
+
+    if(true){
+        statement;
+    }
+
+    if(year === 2026){
+        console.log(current year)
+    }
+
+    if-else 
+    ladder if
+    Nested if 
+    Switchcase
+2. Loops
+    for loop
+    while
+    dowhile
+    for ofloop
+    for...in loop
+3. Branching
+        --> break
+        -- continue
+
+
+Functions in javascripts
+Type of functions
+1. function declaration - write the functino with its name
+            function functionName(){
+                console.log("function body");
+            }
+2. function expression
+            a. anonymous function - function but that doesnt have name
+                let xyz = function(){
+                    console.log("function body");
+                }
+
+            b. arrow function -
+                    let 123 = ()=> { console.log("function body")}   
+
+
+
+     if you have to test login with 5 users... will you create 5 variable?               
+     let user1 ="A"
+     let user2 = "B"
+     let user3 = "C"
+
+     Arrays = NON- primitive
+     arrays always starts at 0th index....
+     size of array can grow and shrink as required
+     user can store same or multiple datatypes value in array variable
+    
+    Java
+     String[] str ={"A","B"}
+ 
+     int arr = new int[3]
+     arr[0] = 12;
+     arr[1] = 14;
+     arr[2] = 50;
+     arr[4] = 100; //arrayIndexOutOfBoundException
+
+
+  Objects in javaScripts
+
+
+ Simple format of creating object in javascripts
+
+     let user ={
+        key:value,
+        key:value,
+        key:value
+     }
+
+     let user ={
+
+        name:"Nitin",
+        role:"Automation"
+     }
+
+
+Nested Objects
+
+    let user = {
+
+        key:value
+        key:{
+
+          key:value
+          key:value  
+        }
+
+
+let user ={
+
+        name:"Nitin",
+        role:"Automation",
+        address:{
+            city: "Pune",
+            pincode:123455,
+            
+        }
+
+     }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
