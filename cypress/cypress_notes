@@ -1,0 +1,86 @@
+Introduction of Cypress
+1. FrontEnd webBased automation tool
+2. Its tool to test modern web based application (New frameworks suchs as reactJS,
+	Angular JS uses to build websites)
+3. Cypress is capable to test any webbased application which run over browsers..
+4. In Cypress, we write testscript in javascript and typescript langugage...
+5. Cypress doesnot use any selenium library, architecture using cypress completely     different from slenium 
+6. Cypress is an opensource 
+		local execution - free
+		server based - cloud - paid services
+7. Cypress run on node.js (environment)
+	
+Main Feature in Cypress
+1. Time travel --> Capture screenshot at each steps
+2. Automatic Wait
+3. Consistency (Flaky test)
+4. Screenshot and video (bydefault available)
+5. Cross browser testing. 		
+
+
+Cypress Structure
+1. e2e - testcases
+2. Fixtures - testdata
+3. Support - reusable code (custome function)
+4. cyress.config.js - global  configuration of cypress (BaseURL, video)
+
+
+how to run the cypress test from terminal or CMD
+1. Open Cypress - npx cypress open
+2. to run test from terminal - npx cypress run
+    bydefault cypress runs the testscript on electron browser with headless mode (without brower enable on screen)
+3. npx cypress run --headed 
+4. npx cypress run --headed --browser "browserName"  | npx cypress run --headed -b "browserName"
+5. npx cypress run --spec cypress/e2e/open_Applicaitonurl.cy.js --headed --browser chrome
+6. viewport 
+
+
+to enable videocapturing in cypress
+
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  allowCypressEnv: false,
+
+  e2e: {
+    video:true,
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+      
+    },
+  },
+});
+
+==================================================================
+module.exports = defineConfig({
+  allowCypressEnv: false,
+
+  e2e: {
+    baseUrl:'https://google.co.in',
+    
+    env:{
+      qa:'https://google.com',
+      prod:'https://facebook.com'
+
+    },
+    video:true,
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+      
+    },
+  },
+});
+
+============================================================================
+Locators
+------
+cypress supports cssSelector only..
+in Previous version cypress xpath support was there but not now......
+with third party plugin user can achieve xpath locator.
+
+attribute[tagname=value]
+[tagname='value']
+[.classname]
+#id
+^,$,*
+
