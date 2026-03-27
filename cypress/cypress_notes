@@ -35,6 +35,8 @@ how to run the cypress test from terminal or CMD
 6. viewport 
 
 
+npx cypress run --spec "cypress/e2e/Day_03/validateMultipleElementsSize.cy.js" --headed --browser chrome
+
 to enable videocapturing in cypress
 
 const { defineConfig } = require("cypress");
@@ -83,4 +85,26 @@ attribute[tagname=value]
 [.classname]
 #id
 ^,$,*
+==================================================
+Contains()
 
+cy.containst() is ctpress commands used to locate element based on it visible text over the page
+
+Syntax
+cy.contains(text);
+cy.contains('selector',text)
+cy.contains('i','Home')
+
+Log -- 20 text
+
+Login
+logout
+
+1. Scan the document object model DOM
+2. Looks for elements ith visible text
+3. Matches with partials text also
+4. picks the first matching node
+
+
+i Home  (2)
+span Home (1)
