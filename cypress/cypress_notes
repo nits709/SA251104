@@ -108,3 +108,50 @@ logout
 
 i Home  (2)
 span Home (1)
+
+
+
+//xpath 
+//div[@class='features_items'] - parent
+/div[@class='col-sm-4'] - child
+- total matching node - 3
+
+A - parent
+B - child
+c - grantchild
+Children() Locators
+
+1. used to get immideate child from the parent node in document object model(DOM)
+1. Moves one level down...
+2. Childern function does not help to get the grantchild elements
+3. Returns the collection of element 
+
+Syntax
+cy.get('parent locator').childern('immid child of parent element/locator)
+
+======================================================================================================
+
+Find();
+is used to get child, grandchild there nester element from selected parent node. in document object model
+1. search inside the element
+2. Goes multiple level deep.
+3. Returns the collection of elements
+
+Syntax.
+cy.get('parent lcoator').find('locators')
+cy.get('parent locator').childern('child locator').find('')
+
+
+Assertions in Cypress. Chai , Mocha Libraries
+1. Implicit Assertions - Inbuild assertion provided by cypress
+      a. should - function.
+      b. and - function
+2. Explicit Assertions -
+      a. assert() - TDD
+      b. expect() - BDD
+
+
+
+Assginments
+1. Automation radio button - of any websites | https://testautomationpractice.blogspot.com/
+2. Automate orangeHRM website by each locators, contains, get, xpath, children,find
