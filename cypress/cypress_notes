@@ -155,3 +155,57 @@ Assertions in Cypress. Chai , Mocha Libraries
 Assginments
 1. Automation radio button - of any websites | https://testautomationpractice.blogspot.com/
 2. Automate orangeHRM website by each locators, contains, get, xpath, children,find
+
+
+
+should('have.text')  and should('contain')
+
+Navigation commands in cypress
+back - cy.go('back')
+forward - cy.go('forward')
+refresh - cy.reload();
+
+
+What are type of dropdown in cypress
+1. dropdown with select tagname
+2. dropdown without select tagname - design by bootstrap tech. using span, div etc...
+
+in cypress can select option in dropdown by using index, visible text & value
+
+
+What is hooks?
+
+browser block
+
+  open browser
+  close open
+
+  1. before(): this block of code run once before all testcases runs are present inside the describe - test suite
+  2. after(): this block of code runs once after all testcases runs are present inside the describe - test suits
+  3. beforeEach(): Runs before each testcases (it block) which are present inside the describe suites
+  4. afterEach(): Runs After each testcases (it block) which are present inside the describe suites
+
+
+Reports -- below commands would executes in visual studio
+1) install cypress-mochawesome-reporter
+    npm i --save-dev cypress-mochawesome-reporter
+
+2) Change cypress reporter & setup hooks
+   Edit config file (cypress.config.js by default)
+
+    const {defineConfig} = require("cypress");
+    module.exports =defineConfig({
+      reporter: 'cypress-mochawesome-reporter', //for html reports
+      e2e: {
+        setupNodeEvents(on, config){
+          //implement node event listeners here
+        require('cypress-mochawesome-reporter/plugin')(on); //for html report
+        },
+      },
+    })
+
+ 3) Add to cypress/support/e2e.js
+    import 'cypress-mochawesome-reporter/register';
+
+ 4) run cypress
+    npx cypress run --spec cypress\e2e\MyTest.cy.js(full qualified path of your testcase file)  
