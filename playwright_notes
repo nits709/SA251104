@@ -1,0 +1,32 @@
+Playwright
+1. Playwright is webbased application automation tool like selenium and cypress
+2. Playwright supports - webbased application, webbrowser mobile(web apps -facebook,linkedin)
+3. Doesn't automate native mobile application (android and IOS) like cypress
+4. Appium tools use to automate for mobile native application
+5. Playwright supports - java, javascripts, typescripts ,c#, python, .net
+6. playwright invented by microsoft in 2020
+7. Browser support in playwright - safari, chrome, firefox.
+8. OS - window, linux, IOS, CLI
+
+
+Feature of playwright
+1. free and open source.
+2. very easy to install playwright
+3. functional, API, accessibility testing (cypress)
+4. parallel-testing
+5. Auto-wait mechanism
+6. Build in assertion (javascripts)
+7. virtual devices execution supported in playwright
+8. fast - very fast
+9. does support iframe and shadow feature....
+
+
+How to run the test in playwright
+1. npx playwright test | headless mode | runs all testcases in headless mode
+2. npx playwright test --headed | runs all testcases without headless mode 
+3. npx playwright show-report | to open reports on browser.
+4. npx playwright test "filename" (examples.spec.js)" | to run test from specific file..
+5. npx playwright test "fileName" --headed --project=chromium|webkit|firefox | to run testcases on specific browsers.
+6. npx playwright test --ui | to enable and run the test in playwright from UI.
+7. npx playwright test "filename" (examples.spec.js) --ui | to enable and run the specific test in playwright from UI.
+8. npx playwright test "filename" --headed --porject=chromium --debug | enable the debugger in playwright
