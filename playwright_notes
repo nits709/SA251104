@@ -30,3 +30,52 @@ How to run the test in playwright
 6. npx playwright test --ui | to enable and run the test in playwright from UI.
 7. npx playwright test "filename" (examples.spec.js) --ui | to enable and run the specific test in playwright from UI.
 8. npx playwright test "filename" --headed --porject=chromium --debug | enable the debugger in playwright
+
+
+
+Selenium 
+
+Chrome
+chromedriver() -- 2MB
+chrome - 2mB
+chrome- 2mb - 20MB
+
+chrome1 = new chromedriver()
+chrome2 =new chromedriver();
+
+
+
+Playwright
+
+Browser - 5MB
+profile1, profile2,profile 3
+Page, page,page
+
+Browser - main object
+profile - user profile
+page - tab,window
+
+
+
+10 testcases - 
+
+
+to create test in playwright, we need to import packages from playwright
+
+import {test,expect} from '@playwright/test'
+
+1. Java - 
+2. javascript -
+
+1. console.log("A")
+2. console.log("B")
+3. console.log("C")
+
+
+Open browsr
+launch URL
+enter data
+
+
+async : this commands tell playwright, we need to wait for certains commands in test because they cannot finished there tasks immediatly.
+await : make commands wait unti it recevies outout from previous commands
