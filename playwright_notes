@@ -268,3 +268,99 @@ To record the script in playwright by codegen
   "Desktop Chrome"
   "Desktop Edge"
   "Desktop Firefox"
+
+
+
+  Assertions in Playwright
+  playwright has 2 types of assertions 
+
+  1. Hard - auto wait (wait until elements loads)
+  2. soft -  auto wait (wait until elements loads)
+  3. JS based assertion - (cannot use await keyword, directly come from JS library | doesnot have auto-retry feature)
+  4. Playwright assertion uses autoretry feature across all elements
+  
+  PW assertions
+  1.locators
+  2. page
+
+  page based assertion
+  1. on url
+  2. on title
+
+  Examples :
+  await expect(page).toHaveURL(pageURL)
+  await expect(page).toHaveTitle(pageTitle) 
+
+  locators based assertions
+  1. toBeVisible();
+  2. tobeEnable();
+  3. tobeHidden();
+  4. tobeEditable();
+  5. tobechecked();
+  6. toHaveCount();
+
+  Auto-retrying assertions
+The following assertions will retry until the assertion passes, or the assertion timeout is reached. Note that retrying assertions are async, so you must await them.
+
+Assertion	Description
+await expect(locator).toBeAttached()	Element is attached
+await expect(locator).toBeChecked()	Checkbox is checked
+await expect(locator).toBeDisabled()	Element is disabled
+await expect(locator).toBeEditable()	Element is editable
+await expect(locator).toBeEmpty()	Container is empty
+await expect(locator).toBeEnabled()	Element is enabled
+await expect(locator).toBeFocused()	Element is focused
+await expect(locator).toBeHidden()	Element is not visible
+await expect(locator).toBeInViewport()	Element intersects viewport
+await expect(locator).toBeVisible()	Element is visible
+await expect(locator).toContainText()	Element contains text
+await expect(locator).toContainClass()	Element has specified CSS classes
+await expect(locator).toHaveAccessibleDescription()	Element has a matching accessible description
+await expect(locator).toHaveAccessibleName()	Element has a matching accessible name
+await expect(locator).toHaveAttribute()	Element has a DOM attribute
+await expect(locator).toHaveClass()	Element has specified CSS class property
+await expect(locator).toHaveCount()	List has exact number of children
+await expect(locator).toHaveCSS()	Element has CSS property
+await expect(locator).toHaveId()	Element has an ID
+await expect(locator).toHaveJSProperty()	Element has a JavaScript property
+await expect(locator).toHaveRole()	Element has a specific ARIA role
+await expect(locator).toHaveScreenshot()	Element has a screenshot
+await expect(locator).toHaveText()	Element matches text
+await expect(locator).toHaveValue()	Input has a value
+await expect(locator).toHaveValues()	Select has options selected
+await expect(locator).toMatchAriaSnapshot()	Element matches the Aria snapshot
+await expect(page).toHaveScreenshot()	Page has a screenshot
+await expect(page).toHaveTitle()	Page has a title
+await expect(page).toHaveURL()	Page has a URL
+await expect(response).toBeOK()	Response has an OK status
+
+
+
+
+
+Default TimeOut in Playwright
+1. Assertion timeout  - 5000 MS
+2. default timeout per testcase in playwright is 30 sec, which can extends upto 2 mins
+3. click({timeout:5000})
+4. test.use({timeout:200000})
+
+
+open URL
+Enter username
+Enter Password
+Click on button
+
+Parallel Execution scenario in playwright
+1. Multiple testcases - same browser  -- 
+    all testcases are present in same file
+        Login.spec.js - 2-3 testcases present in that file
+
+2. Single testcases - executes on multiple different browser
+    Login test - Chrome, firefox,safari - parallel
+      one file have one testcases only - which runs on different browsers parallely
+
+3. run testcases from multiple files into multipe different browser  
+        3 testcases present under 3 different file and that runs on different browser
+
+
+  
