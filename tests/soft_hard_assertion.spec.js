@@ -4,7 +4,7 @@ import {test,expect} from '@playwright/test'
 //     timeout:20000
 // })
 
-test.only('hard',async({page})=>{
+test('hard',async({page})=>{
 
     await page.goto('https://demoblaze.com');
     console.log('A');

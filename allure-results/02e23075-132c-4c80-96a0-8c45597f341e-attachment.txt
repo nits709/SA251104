@@ -1,0 +1,90 @@
+page navigates successfully
+total number of links present on page 44
+text of links A/B Testing
+title The Internet
+text of links Add/Remove Elements
+title The Internet
+text of links Basic Auth
+title 
+text of links Broken Images
+title The Internet
+text of links Challenging DOM
+title The Internet
+text of links Checkboxes
+title The Internet
+text of links Context Menu
+title The Internet
+text of links Digest Authentication
+title 
+text of links Disappearing Elements
+title The Internet
+text of links Drag and Drop
+title The Internet
+text of links Dropdown
+title The Internet
+text of links Dynamic Content
+title The Internet
+text of links Dynamic Controls
+title The Internet
+text of links Dynamic Loading
+title The Internet
+text of links Entry Ad
+title The Internet
+text of links Exit Intent
+title The Internet
+text of links File Download
+title The Internet
+text of links File Upload
+title The Internet
+text of links Floating Menu
+title The Internet
+text of links Forgot Password
+title The Internet
+text of links Form Authentication
+title The Internet
+text of links Frames
+title The Internet
+text of links Geolocation
+title The Internet
+text of links Horizontal Slider
+title The Internet
+text of links Hovers
+title The Internet
+text of links Infinite Scroll
+title The Internet
+text of links Inputs
+title The Internet
+text of links JQuery UI Menus
+title The Internet
+text of links JavaScript Alerts
+title The Internet
+text of links JavaScript onload event error
+title Page with JavaScript errors on load
+text of links Key Presses
+title The Internet
+text of links Large & Deep DOM
+title The Internet
+text of links Multiple Windows
+title The Internet
+text of links Nested Frames
+title 
+text of links Notification Messages
+title The Internet
+text of links Redirect Link
+title The Internet
+text of links Secure File Download
+title 
+text of links Shadow DOM
+title The Internet
+text of links Shifting Content
+title The Internet
+text of links Slow Resources
+title The Internet
+text of links Sortable Data Tables
+title The Internet
+text of links Status Codes
+title The Internet
+text of links Typos
+title The Internet
+text of links WYSIWYG Editor
+title The Internet

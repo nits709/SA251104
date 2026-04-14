@@ -24,7 +24,7 @@ test("getelementByPlaceHolder", async ({ page }) => {
 
 })
 
-test.only("getElementByRole", async ({ page }) => {
+test("getElementByRole", async ({ page }) => {
     await page.goto("https://the-internet.herokuapp.com/login")
     await page.locator("#username").fill("tomsmith")
     await page.locator("#password").fill("SuperSecretPassword!")

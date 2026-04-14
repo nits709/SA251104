@@ -299,7 +299,7 @@ To record the script in playwright by codegen
   5. tobechecked();
   6. toHaveCount();
 
-  Auto-retrying assertions
+Auto-retrying assertions
 The following assertions will retry until the assertion passes, or the assertion timeout is reached. Note that retrying assertions are async, so you must await them.
 
 Assertion	Description
@@ -335,14 +335,11 @@ await expect(page).toHaveURL()	Page has a URL
 await expect(response).toBeOK()	Response has an OK status
 
 
-
-
-
 Default TimeOut in Playwright
 1. Assertion timeout  - 5000 MS
 2. default timeout per testcase in playwright is 30 sec, which can extends upto 2 mins
-3. click({timeout:5000})
-4. test.use({timeout:200000})
+3. click({timeout:5000}) | condition based on step based timeout (if user want to provide a wait for specific line code)
+4. test.use({timeout:200000}) | use this per spec.js file
 
 
 open URL
@@ -362,5 +359,21 @@ Parallel Execution scenario in playwright
 3. run testcases from multiple files into multipe different browser  
         3 testcases present under 3 different file and that runs on different browser
 
+
+Screenshots in playwright
+in playwright mulitple way to take screenshot
+1. pageView - gets screenshot of browserviewport
+2. full page - get e-e page screenshot from header to footer
+3. locator screenshot
+
+
+Allure report generation commands
+  Report allure
+1. make change in playwright.config.js | reporter: 'allure-playwright',
+2. sudo npm install -D allure-playwright
+3. Then execute any test
+4. generate report - allure generate ./allure-results -o ./allure-report clean
+5. execute this command if step 4 not working - sudo npm install -g allure-commandline --save-dev (optional)
+6. to open allure report | allure open allure-report
 
   
