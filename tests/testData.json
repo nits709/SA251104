@@ -1,0 +1,6 @@
+{
+    "url": "https://jqueryui.com/droppable/",
+    "frameLocator": ".demo-frame",
+    "draggable": "#draggable",
+    "droppable": "#droppable"
+}

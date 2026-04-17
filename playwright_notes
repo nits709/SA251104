@@ -376,4 +376,11 @@ Allure report generation commands
 5. execute this command if step 4 not working - sudo npm install -g allure-commandline --save-dev (optional)
 6. to open allure report | allure open allure-report
 
+
+open questions
+1. Iframe in playewright
+2. ReadJson data in Playwright
+3. Automate calender
+
+
   
