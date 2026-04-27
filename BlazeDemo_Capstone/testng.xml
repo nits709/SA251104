@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Suite">
+	<test name="MyTest">
+		<classes>
+			<class name="tests.FlightBookingTest">
+			</class>
+		</classes>
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="functional" />
+			</run>
+		</groups>
+	</test>
+</suite>
